@@ -77,11 +77,13 @@ class ListFragment : Fragment() {
 
     private  fun populateList(list:List<Character>){
             adapter.update(list)
+            adapter.notifyDataSetChanged()
+
 
         }
 
     private fun loadingVisibility(isLoading: Boolean){
-        progressBar.visibility = if(isLoading) View.VISIBLE else View.GONE
+       progressBar.visibility = if(isLoading) View.VISIBLE else View.GONE
     }
 
 

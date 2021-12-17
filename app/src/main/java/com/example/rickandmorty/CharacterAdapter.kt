@@ -10,9 +10,10 @@ import com.example.rickandmorty.model.Character
 import kotlinx.android.synthetic.main.character_item.view.*
 
 
-class CharacterAdapter(private var characterList:List<Character>) :
+class CharacterAdapter :
     RecyclerView.Adapter<CharacterViewHolder>() {
 
+    private var characterList = emptyList<Character>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.character_item, parent, false)
@@ -41,6 +42,8 @@ class CharacterAdapter(private var characterList:List<Character>) :
 
     fun update(list: List<Character>) {
         characterList = list
+
+
     }
 
 
