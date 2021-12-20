@@ -5,10 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface Api {
-        //https://rickandmortyapi.com/api/character
-        //https://raw.githubusercontent.com/natanfelipe/FilmesFlixJson/master/moviesList
-
-        @GET("api/character") //mudei aki
+        @GET("api/character")
         fun getAllCharacter(): Call<CharacterList>
-
 }
+//https://rickandmortyapi.com/api/character

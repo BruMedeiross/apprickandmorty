@@ -1,14 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@color/black_ligth"
     tools:context=".DetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_margin="32dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/painel"
+        android:padding="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
 
-</FrameLayout>
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintVertical_bias="0.05"
+            style="@style/detailActivity"
+            tools:text="@string/title_status" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/characterImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.2"
+            style="@style/detailActivity"
+            tools:src="@tools:sample/avatars"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.65"
+            style="@style/detailActivity"
+            tools:text="@string/txt_checkbox_genderless"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/character_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"
+            style="@style/detailActivity"
+            tools:ignore="MissingConstraints"/>
+
+
+        <TextView
+            android:id="@+id/textSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/character_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.55"
+            style="@style/detailActivity"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:text="@string/title_episodes"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintVertical_bias="0.77"
+            tools:ignore="MissingConstraints"
+            style="@style/detailActivity"/>
+        <TextView
+            android:id="@+id/textEposides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:text="@string/number"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintVertical_bias="0.77"
+            tools:ignore="MissingConstraints"
+            style="@style/detailActivity"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/title_location"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.80"
+            tools:ignore="MissingConstraints"
+            style="@style/detailActivity" />
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/character_text"
+            android:textStyle="normal|italic"
+            app:layout_constraintStart_toStartOf="@id/text2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.85"
+            tools:ignore="MissingConstraints"
+            android:maxLines="3"
+            style="@style/detailActivity" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/title_origin"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.92"
+            tools:ignore="MissingConstraints"
+            style="@style/detailActivity" />
+
+        <TextView
+            android:id="@+id/textOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/character_text"
+            android:textStyle="normal|italic"
+            app:layout_constraintStart_toStartOf="@id/text3"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.97"
+            tools:ignore="MissingConstraints"
+            android:maxLines="1"
+            style="@style/detailActivity" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

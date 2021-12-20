@@ -12,5 +12,8 @@ data class Character (
     var status : String,
     var species: String,
     var gender: String,
-    var image : String
+    var image : String?,
+    var origin : LocationData,
+    var location : LocationData,
+    var episode : List<String>
 ): Parcelable
