@@ -1,8 +1,7 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.view
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.example.rickandmorty.model.Character
 
 class CharacterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 

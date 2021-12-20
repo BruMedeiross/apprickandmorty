@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
 
     android:background="@color/black_ligth"
-    tools:context=".DetailFragment">
+    tools:context=".view.DetailFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

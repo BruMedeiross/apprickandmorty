@@ -28,6 +28,8 @@
     <string name="search_character">Procurar Personagem</string>
     <string name="more">Saiba Mais</string>
     <string name="number">4</string>
+    <string name="filter_btn">Filtrar</string>
+    <string name="search_btn">Buscando</string>
 
 
 </resources>

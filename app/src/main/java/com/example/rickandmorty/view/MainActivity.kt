@@ -1,13 +1,11 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment.findNavController
-import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.rickandmorty.databinding.ActivityMainBinding
+import com.example.rickandmorty.R
 
 
 class MainActivity : AppCompatActivity() {

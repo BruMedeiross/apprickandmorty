@@ -1,11 +1,11 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.view.size
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.rickandmorty.R
 import com.example.rickandmorty.model.Character
 import kotlinx.android.synthetic.main.character_item.view.*
 

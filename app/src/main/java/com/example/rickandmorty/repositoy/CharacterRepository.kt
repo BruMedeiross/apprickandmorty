@@ -3,8 +3,6 @@ package com.example.rickandmorty.repositoy
 import android.util.Log
 import com.example.rickandmorty.api.RestApiTask
 import com.example.rickandmorty.model.Character
-import com.example.rickandmorty.model.CharacterList
-import retrofit2.Call
 
 class CharacterRepository(private val restApiTask: RestApiTask) {
 

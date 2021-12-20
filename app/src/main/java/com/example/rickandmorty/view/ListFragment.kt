@@ -1,26 +1,19 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.view
 
-import android.icu.lang.UCharacter
-import android.icu.lang.UCharacter.VerticalOrientation
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.widget.SearchView
-import androidx.core.view.isNotEmpty
 
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.rickandmorty.R
 import com.example.rickandmorty.databinding.FragmentListBinding
 import com.example.rickandmorty.model.Character
 import com.example.rickandmorty.viewmodel.CharacterViewModel
-import kotlinx.android.synthetic.main.character_item.*
-import kotlinx.android.synthetic.main.fragment_detail.*
 import kotlinx.android.synthetic.main.fragment_list.*
 
 
@@ -56,7 +49,11 @@ class ListFragment : Fragment() {
         characterList.adapter = adapter
 
         btn_filter.setOnClickListener {
-           Toast.makeText(context, "Pesquisando", Toast.LENGTH_LONG).show()
+           Toast.makeText(context, getString(R.string.filter_btn), Toast.LENGTH_SHORT).show()
+        }
+
+        searchView.setOnClickListener {
+            Toast.makeText(context, getString(R.string.search_btn), Toast.LENGTH_SHORT).show()
         }
 
         initObserver()

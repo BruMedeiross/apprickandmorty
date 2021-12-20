@@ -1,10 +1,11 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.view
 
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.example.rickandmorty.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_detail.*
 
