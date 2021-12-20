@@ -5,7 +5,7 @@ No APP desenvolvido foi realizada a consulta de uma API publica com base nas pr�
 O padrão Model > View > ViewModel visa a separacao de conceitos:
 
 - A VIEW : renderiza e tratar a lógica referente aos componentes do usuário.
-- A ViewModel : responsável pela regra de negócio e repository interagem com o data source.
+- A ViewModel : responsável pela regra de negócio e repository interagem com o data source .
 - Model : o data source faz a chamada pro webservice ou banco de dados.
 
 # Ferramentas e Recursos utilizados
