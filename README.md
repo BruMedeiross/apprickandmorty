@@ -1,6 +1,6 @@
 # Rick and Morty API
 
-<<<<<<< HEAD
+
 No APP desenvolvido foi realizada a consulta de uma API publica com padrão MVVM
 
 O padrão Model > View > ViewModel visa a separacao de conceitos:
@@ -8,15 +8,6 @@ O padrão Model > View > ViewModel visa a separacao de conceitos:
 - A VIEW : renderiza e trata a lógica referente aos componentes do usuário.(activity/fragment)
 - A ViewModel : responsável pela regra de negócio.
 - Model : repository interage com o data source que faz a chamada pro webservice ou banco de dados.
-=======
-No APP desenvolvido foi realizada a consulta de uma API publica com base nas práticas de Clean Achiteture no padrão MVVM
-
-O padrão Model > View > ViewModel visa a separacao de conceitos:
-
-- A VIEW : renderiza e tratar a lógica referente aos componentes do usuário.
-- A ViewModel : responsável pela regra de negócio e repository interagem com o data source .
-- Model : o data source faz a chamada pro webservice ou banco de dados.
->>>>>>> github/main
 
 # Ferramentas e Recursos utilizados
 
