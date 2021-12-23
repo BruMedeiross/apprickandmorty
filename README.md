@@ -15,11 +15,7 @@ O padrão Model > View > ViewModel visa a separacao de conceitos:
 - Retrofit : fornece um padrão simples de implementação para transmissão de dados entre aplicação e servidor, que faz uso do JSON.
 - Navigation Component : componente de navegação para ajudar a gerenciar qualquer implementação de navegação.(Jetpack)
 - Coil : Uma biblioteca de carregamento de imagens para Android apoiada por Kotlin Coroutines.
-<<<<<<< HEAD
-- LiveData and ViewModel : manipular a UI
-=======
-- LiveData and ViewModel : manipular a UI 
->>>>>>> github/main
+- LiveData and ViewModel : manipular a UI e observer
 - Coroutines
 
 # API
