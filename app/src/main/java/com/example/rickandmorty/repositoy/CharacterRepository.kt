@@ -3,7 +3,7 @@ package com.example.rickandmorty.repositoy
 import android.util.Log
 import com.example.rickandmorty.api.RestApiTask
 import com.example.rickandmorty.model.Character
-
+//ponte para o data source
 class CharacterRepository(private val restApiTask: RestApiTask) {
 
     companion object{

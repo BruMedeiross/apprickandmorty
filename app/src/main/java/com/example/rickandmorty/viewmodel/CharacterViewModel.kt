@@ -8,7 +8,6 @@ import com.example.rickandmorty.api.RestApiTask
 import com.example.rickandmorty.model.Character
 import com.example.rickandmorty.repositoy.CharacterRepository
 import java.lang.Exception
-
 class CharacterViewModel: ViewModel() {
 
     companion object{
